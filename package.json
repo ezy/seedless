@@ -1,0 +1,28 @@
+{
+  "name": "seedless-serverless-auth",
+  "version": "0.1.0",
+  "repository": "git@github.com:ezy/seedless.git",
+  "author": "Ezy <ezrakeddell@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "serverless offline start",
+    "test": "node_modules/.bin/jest",
+    "test:coverage": "open coverage/lcov-report/index.html",
+    "eslint": "./node_modules/.bin/eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "lambda-tester": "^3.5.0",
+    "serverless-offline": "^3.25.12"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11"
+  }
+}

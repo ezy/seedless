@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "d196e098-487a-4c60-a490-a09b3dba58b6",
+		"name": "newseed-svrless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/sessions (auth-private)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/sessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/sessions (auth-private)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/sessions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Sep 2018 22:47:14 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache",
+							"name": "cache-control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip",
+							"name": "content-encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiamVubnkiLCJzY29wZXMiOlsicHJpdmF0ZSJdfSwiaWF0IjoxNTM3Mzk3MjM0LCJleHAiOjE1MzczOTc1MzR9.GDXAoZAikf_2GnR7965HXuoYP9MKJMSVRIAtGrN_4So\"}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/sessions(no-private)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"bob\",\n\t\"password\": \"hammer_time\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/sessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/sessions(no-private)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"bob\",\n\t\"password\": \"hammer_time\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/sessions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Sep 2018 22:45:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache",
+							"name": "cache-control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip",
+							"name": "content-encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiYm9iIiwic2NvcGVzIjpbXX0sImlhdCI6MTUzNzM5NzEzNSwiZXhwIjoxNTM3Mzk3NDM1fQ.TMEQ2o2m4rT2KZXUQUxOHuRBvuz88bpIWomnwZxZwi0\"}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/posts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Sep 2018 22:30:17 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache",
+							"name": "cache-control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip",
+							"name": "content-encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"body": "{\"posts\":[{\"id\":1,\"title\":\"A post\",\"text\":\"Lorem notsum\"}]}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/private",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiamVubnkiLCJzY29wZXMiOlsicHJpdmF0ZSJdfSwiaWF0IjoxNTM3Mzk3Mjc1LCJleHAiOjE1MzczOTc1NzV9.kpkcwNz2ojKJUgk2TOmrJeo-aLHYfQS3uX849qySMmA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/private",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"private"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/private",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiamVubnkiLCJzY29wZXMiOlsicHJpdmF0ZSJdfSwiaWF0IjoxNTM3Mzk3Mjc1LCJleHAiOjE1MzczOTc1NzV9.kpkcwNz2ojKJUgk2TOmrJeo-aLHYfQS3uX849qySMmA",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/private",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"private"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Sep 2018 22:48:05 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache",
+							"name": "cache-control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip",
+							"name": "content-encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"body": "{\"private\":[{\"id\":1,\"name\":\"Secret squirrel\"}]}"
+				},
+				{
+					"name": "http://localhost:3000/private",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiYm9iIiwic2NvcGVzIjpbXX0sImlhdCI6MTUzNzM5NzEzNSwiZXhwIjoxNTM3Mzk3NDM1fQ.TMEQ2o2m4rT2KZXUQUxOHuRBvuz88bpIWomnwZxZwi0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/private",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"private"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Sep 2018 22:45:49 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache",
+							"name": "cache-control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip",
+							"name": "content-encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"body": "{\"statusCode\":403,\"error\":\"Forbidden\",\"message\":\"User is not authorized to access this resource\"}"
+				},
+				{
+					"name": "http://localhost:3000/private",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"jenny\",\n\t\"password\": \"pink_panther\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/private",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"private"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Sep 2018 22:48:17 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache",
+							"name": "cache-control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip",
+							"name": "content-encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"body": "{\"statusCode\":401,\"error\":\"Unauthorized\",\"message\":\"Unauthorized\"}"
+				}
+			]
+		}
+	]
+}
